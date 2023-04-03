@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
             />
             <meta
                property="og:image"
-               content="https://www.datdev.click/public/images/profile/avt-pic-1.jpg"
+               content="https://www.datdev.click/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favt-pic-1.9b03c7d0.jpg&w=1920&q=75"
             />
 
             {/* <!-- Twitter --> */}
@@ -41,7 +41,7 @@ export default function App({ Component, pageProps }) {
             />
             <meta
                property="twitter:image"
-               content="https://www.datdev.click/public/images/profile/avt-pic-1.jpg"
+               content="https://www.datdev.click/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favt-pic-1.9b03c7d0.jpg&w=1920&q=75"
             />
 
             <link rel="icon" href="/favicon.ico" />
