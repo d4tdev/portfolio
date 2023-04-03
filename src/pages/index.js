@@ -12,7 +12,7 @@ export default function Home() {
    return (
       <>
          <Head>
-            <title>Portfolio</title>
+            <title>ttd4t | Home Page</title>
             <meta name="description" content="Write about my self" />
          </Head>
          <main className="flex items-center text-dark w-full min-h-screen">
@@ -31,7 +31,7 @@ export default function Home() {
                         className="!text-6xl !text-left"
                      />
                      <p className="my-5 text-base font-medium">
-                        As a skilled back-end developer, I do my best with my
+                        As a skilled Back-End developer, I do my best with my
                         brain to turn ideas into logical code.Explore my latest
                         projects and articles, showcasing my expertise in
                         Node.js & JS and web development.
