@@ -13,7 +13,7 @@ export default function Home() {
       <>
          <Head>
             <title>ttd4t | Home Page</title>
-            <meta name="description" content="Write about my self" />
+            <meta name="description" content="Write something about my self :)" />
          </Head>
          <main className="flex items-center text-dark w-full min-h-screen">
             <Layout className="pt-0">
