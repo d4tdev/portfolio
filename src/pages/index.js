@@ -45,9 +45,9 @@ export default function Home() {
                content="https://www.datdev.click/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favt-pic-1.9b03c7d0.jpg&w=1920&q=75"
             />
          </Head>
-         <main className="flex items-center text-dark w-full min-h-screen">
-            <Layout className="pt-0">
-               <div className="flex items-center justify-between w-full">
+         <main className="m-0 flex items-center text-dark w-full mt-7 -mb-2">
+            <Layout className="pt-0 flex flex-col items-center">
+               <div className="max-w-[1400px] flex items-center justify-between w-full">
                   <div className="w-1/2">
                      <Image
                         src={profilePic}
@@ -85,7 +85,7 @@ export default function Home() {
                </div>
             </Layout>
             <HireMe />
-            <div className="absolute right-8 bottom-8 inline-block w-24">
+            <div className="absolute right-8 bottom-24 inline-block w-24">
                <Image src={lightBulb} alt="ttd4t" className="w-full h-auto" />
             </div>
          </main>
