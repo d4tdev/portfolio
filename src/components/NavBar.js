@@ -2,8 +2,16 @@ import Link from 'next/link';
 import React from 'react';
 import Logo from './Logo';
 import { useRouter } from 'next/router';
-import { DiscordIcon, FacebookIcon, GithubIcon, InstagramIcon } from './Icon';
+import {
+   DiscordIcon,
+   FacebookIcon,
+   GithubIcon,
+   InstagramIcon,
+   MoonIcon,
+   SunIcon,
+} from './Icon';
 import { motion } from 'framer-motion';
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const CustomLink = ({ href, title, className = '' }) => {
    const router = useRouter();
@@ -12,7 +20,7 @@ const CustomLink = ({ href, title, className = '' }) => {
          {title}
 
          <span
-            className={`h-[2px] inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+            className={`h-[2px] inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 dark:bg-primary ${
                router.asPath === href ? 'w-full' : 'w-0'
             }`}>
             &nbsp;
@@ -22,8 +30,10 @@ const CustomLink = ({ href, title, className = '' }) => {
 };
 
 const NavBar = () => {
+   const [darkMode, setDarkMode] = useThemeSwitcher();
+
    return (
-      <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+      <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
          <nav>
             <CustomLink href="/" title="Home" className="mr-4" />
             <CustomLink href="/about" title="About" className="mx-4" />
@@ -63,6 +73,22 @@ const NavBar = () => {
                className="w-6 ml-3">
                <InstagramIcon />
             </motion.a>
+
+            <button
+               onClick={() =>
+                  setDarkMode(darkMode === 'dark' ? 'light' : 'dark')
+               }
+               className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+                  darkMode === 'light'
+                     ? 'bg-dark text-light'
+                     : 'bg-light text-dark'
+               }`}>
+               {darkMode === 'dark' ? (
+                  <SunIcon className={'fill-dark'} />
+               ) : (
+                  <MoonIcon className={'fill-dark'} />
+               )}
+            </button>
          </nav>
 
          <div className="absolute left-[50%] top-2 translate-x-[-50%]">

@@ -1,5 +1,6 @@
 import AnimatedText from '@/components/AnimatedText';
 import { GithubIcon } from '@/components/Icon';
+import { motion } from 'framer-motion';
 import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -14,6 +15,8 @@ import projectOnePiece from '../../public/images/projects/one_piece_thumbnail.gi
 import projectConan from '../../public/images/projects/conan_thumbnail.gif';
 import projectWFMG from '../../public/images/projects/wfmg_thumbnail.png';
 
+const FramerImage = motion(Image);
+
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
    return (
       <div className="flex justify-center">
@@ -23,10 +26,12 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                href={link}
                target="_blank"
                className="w-1/2 cursor-pointer overflow-hidden rounded-lg flex justify-center">
-               <Image
+               <FramerImage
                   src={img}
                   alt={title}
                   className="w-full h-auto max-w-[460px]"
+               whileHover={{ scale: 1.05 }}
+               transition={{duration: 0.2}}
                />
             </Link>
 
@@ -68,10 +73,12 @@ const Project = ({ title, type, img, link, github }) => {
             href={link}
             target="_blank"
             className="w-full cursor-pointer overflow-hidden rounded-lg flex justify-center">
-            <Image
+            <FramerImage
                src={img}
                alt={title}
                className="w-full h-auto max-w-[320px]"
+               whileHover={{ scale: 1.05 }}
+               transition={{duration: 0.2}}
             />
          </Link>
 
