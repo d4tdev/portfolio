@@ -51,6 +51,8 @@ export default function Home() {
                   <div className="w-1/2">
                      <Image
                         src={profilePic}
+                        priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                         alt="ttd4t"
                         className="ml-12 w-[63%] h-auto rounded-[50%]"
                      />

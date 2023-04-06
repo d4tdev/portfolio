@@ -41,7 +41,8 @@ const useThemeSwitcher = () => {
       if (darkMode === 'dark') {
          window.localStorage.setItem('theme', 'dark');
          document.documentElement.classList.add('dark');
-      } else {
+      }
+      if (darkMode === 'light') {
          window.localStorage.setItem('theme', 'light');
          document.documentElement.classList.remove('dark');
       }
