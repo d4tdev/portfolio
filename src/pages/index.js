@@ -45,9 +45,9 @@ export default function Home() {
                content="https://www.datdev.click/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favt-pic-1.9b03c7d0.jpg&w=1920&q=75"
             />
          </Head>
-         <main className="m-0 flex items-center text-dark w-full mt-7 -mb-2">
+         <main className="m-0 flex items-center text-dark w-full dark:text-light">
             <Layout className="pt-0 flex flex-col items-center">
-               <div className="max-w-[1400px] flex items-center justify-between w-full">
+               <div className="max-w-[1400px] translate-y-14 flex items-center justify-between w-full">
                   <div className="w-1/2">
                      <Image
                         src={profilePic}
@@ -70,14 +70,14 @@ export default function Home() {
                         <Link
                            href="/cv_ttd.pdf"
                            target={'_blank'}
-                           className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                           className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-primary hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-primary hover:dark:text-light hover:dark:border-light"
                            download={true}>
                            Resume <LinkArrow className={'w-6 ml-1'} />
                         </Link>
                         <Link
                            href="mailto:jsmsj04@gmail.com"
                            target={'_blank'}
-                           className="ml-4 text-lg font-medium capitalize text-dark underline">
+                           className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light">
                            Contact
                         </Link>
                      </div>
