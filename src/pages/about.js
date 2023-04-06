@@ -48,7 +48,7 @@ const about = () => {
                />
                <div className="grid w-full grid-cols-8 gap-16">
                   <div className="col-span-3 flex flex-col items-start justify-start">
-                     <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+                     <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dảk:text-light/75">
                         Biography
                      </h2>
                      <p className="font-medium">
@@ -81,6 +81,8 @@ const about = () => {
                      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
                      <Image
                         src={profilePic}
+                        priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt="ttd4t"
                         className="w-full h-auto rounded-2xl "
                      />
