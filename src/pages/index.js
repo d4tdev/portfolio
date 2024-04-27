@@ -22,21 +22,20 @@ export default function Home() {
 
             {/* <!-- Open Graph | Facebook | Zalo --> */}
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.datdev.click/" />
+            <meta property="og:url" content="https://datdev.id.vn/" />
             <meta property="og:title" content="d4Jt | Home Page" />
             <meta
                property="og:description"
                content="Write something about my self :)"
             />
+            <meta property="og:image" content={profilePic} />
             <meta
-               property="og:image"
-               content={profilePic}
-            />
-            <meta name="google-adsense-account" content="ca-pub-6991461966723365"></meta>
+               name="google-adsense-account"
+               content="ca-pub-6991461966723365"></meta>
 
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content="https://www.datdev.click/" />
+            <meta property="twitter:url" content="https://datdev.id.vn/" />
             <meta property="twitter:title" content="d4Jt | Home Page" />
             <meta
                property="twitter:description"
