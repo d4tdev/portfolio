@@ -90,7 +90,7 @@ const NavBar = () => {
             </nav>
             <nav className="flex items-center justify-center flex-wrap">
                <motion.a
-                  href="https://www.facebook.com/t.d4Jt/"
+                  href="https://www.facebook.com/t.t.d4t/"
                   target={'_blank'}
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
@@ -176,7 +176,7 @@ bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
                </nav>
                <nav className="flex items-center justify-center flex-wrap mt-2">
                   <motion.a
-                     href="https://www.facebook.com/t.d4Jt/"
+                     href="https://www.facebook.com/t.t.d4t/"
                      target={'_blank'}
                      whileHover={{ y: -2 }}
                      whileTap={{ scale: 0.9 }}
@@ -200,7 +200,7 @@ bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
                      <GithubIcon />
                   </motion.a>
                   <motion.a
-                     href="https://www.instagram.com/d4jt._//ttd4t._/"
+                     href="https://www.instagram.com/d4jt._/"
                      target={'_blank'}
                      whileHover={{ y: -2 }}
                      whileTap={{ scale: 0.9 }}

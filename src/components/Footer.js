@@ -19,7 +19,7 @@ const Footer = () => {
                </Link>
             </div>
             <Link
-               href="https://www.facebook.com/t.d4Jt/"
+               href="https://www.facebook.com/t.t.d4t/"
                target={'_blank'}
                className="underline underline-offset-2">
                Say hello

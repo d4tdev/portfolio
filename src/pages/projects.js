@@ -21,8 +21,8 @@ const FramerImage = motion(Image);
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
    return (
       <div className="flex justify-center">
-         <article className="max-h-80 max-w-[1280px] w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl">
-            <div className="absolute top-0 -right-3 -z-10 w-[100.8%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
+         <article className="max-h-80 max-w-[1280px] w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:border-light dark:text-light dark:bg-dark">
+            <div className="absolute top-0 -right-3 -z-10 w-[100.8%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
             <Link
                href={link}
                target="_blank"
@@ -46,7 +46,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                      {title}
                   </h2>
                </Link>
-               <p className="my-2 font-medium text-dark">{summary}</p>
+               <p className="my-2 font-medium text-dark dark:text-light ">
+                  {summary}
+               </p>
                <div className="mt-2 flex items-center">
                   <Link href={github} target="_blank" className="w-10">
                      {' '}
@@ -55,7 +57,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                   <Link
                      href={link}
                      target="_blank"
-                     className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">
+                     className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:text-dark dark:bg-light">
                      {' '}
                      Visit Project
                   </Link>
@@ -68,8 +70,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
    return (
-      <article className="max-w-sm w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
-         <div className="absolute top-0 -right-3 -z-10 w-[101.5%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
+      <article className="max-w-sm w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light dark:text-light">
+         <div className="absolute top-0 -right-3 -z-10 w-[101.5%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
          <Link
             href={link}
             target="_blank"
@@ -158,7 +160,7 @@ const projects = () => {
                   </div>
                   <div className="col-span-4 flex justify-center">
                      <Project
-                        title="API website Let's food"
+                        title="website Let's food"
                         img={projectAPILetsFood}
                         link="https://letsfood.click/"
                         type="Featured Project"
@@ -168,11 +170,11 @@ const projects = () => {
 
                   <div className="col-span-12">
                      <FeaturedProject
-                        title="API for website Ebook"
+                        title="website Ebook.co"
                         img={projectAPIEbook}
                         summary={`The project is created from Typescript along with NodeJS to create an API for a book-selling website. The project uses the MVC and client-server model. It was carried out by two people.`}
                         link="https://ban-sach-truc-tuyen.vercel.app"
-                        type="Featured Project API"
+                        type="Featured Project Web"
                         github="https://github.com/ttd4t/api-web-ban-sach"
                      />
                   </div>
@@ -189,22 +191,12 @@ const projects = () => {
 
                   <div className="col-span-12">
                      <FeaturedProject
-                        title="WFMG website"
+                        title="website WFMG"
                         img={projectWFMG}
                         summary={`"This project was created to assist users in managing personal tasks. It utilizes the MVC model and a NodeJS-ReactJS client-server architecture. This project is built using NodeJS, ExpressJS, MongoDB, and ReactJS, collectively referred to as the MERN stack.`}
                         link="https://wfmg.vercel.app"
                         type="Featured Project Web"
-                        github="https://github.com/ttd4t/web-workflow-management"
-                     />
-                  </div>
-                  <div className="col-span-12">
-                     <FeaturedProject
-                        title="API for WFMG website"
-                        img={projectWFMG}
-                        summary={`"This project was created to assist users in managing personal tasks. It utilizes the MVC model and a NodeJS-ReactJS client-server architecture. This project is built using NodeJS, ExpressJS, MongoDB, and ReactJS, collectively referred to as the MERN stack.`}
-                        link="https://wfmg.vercel.app"
-                        type="Featured Project API"
-                        github="https://github.com/ttd4t/api-workflow-management"
+                        github="https://github.com/d4Jt/WFMG"
                      />
                   </div>
                </div>

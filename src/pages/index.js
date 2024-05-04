@@ -29,6 +29,10 @@ export default function Home() {
                content="Write something about my self :)"
             />
             <meta property="og:image" content={profilePic} />
+            <script
+               async
+               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6991461966723365"
+               crossorigin="anonymous"></script>
             <meta
                name="google-adsense-account"
                content="ca-pub-6991461966723365"></meta>

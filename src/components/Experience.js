@@ -55,7 +55,7 @@ const Experience = () => {
                <Details
                   position="Waiting for a job"
                   company="..."
-                  companyLink="https://www.facebook.com/t.d4Jt"
+                  companyLink="https://www.facebook.com/t.t.d4t"
                   time="2023"
                   address="ThaiNguyen"
                   work=""
