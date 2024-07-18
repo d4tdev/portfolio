@@ -118,7 +118,7 @@ const projects = () => {
    return (
       <>
          <Head>
-            <title> ttd4t | Projects Page</title>
+            <title> d4tdev | Projects Page</title>
             <meta name="description" content="Some projects made by me" />
          </Head>
          <TransitionEffect />
@@ -137,7 +137,7 @@ const projects = () => {
                         summary="The project is created from discord.js to create a bot with many functions used in Discord (the most commonly used function is playing music). This project is quite popular among Discord users."
                         link="https://discord.com/api/oauth2/authorize?client_id=903232960415805510&permissions=8&scope=bot%20applications.commands"
                         type="Featured Project (use for Discord)"
-                        github="https://github.com/ttd4t/discord-bot-v14"
+                        github="https://github.com/d4tdev/discord-bot-v14"
                      />
                   </div>
                   <div className="col-span-4 flex justify-center">
@@ -146,7 +146,7 @@ const projects = () => {
                         img={projectAPIXSMB}
                         link="https://api-xsmb.cyclic.app/v1"
                         type="Featured Project API"
-                        github="https://github.com/ttd4t/api-xsmb-today"
+                        github="https://github.com/d4tdev/api-xsmb-today"
                      />
                   </div>
                   <div className="col-span-4 flex justify-center">
@@ -155,7 +155,7 @@ const projects = () => {
                         img={projectOnePiece}
                         link="https://api-one-piece.cyclic.app/api/v1"
                         type="Featured Project API"
-                        github="https://github.com/ttd4t/api-one-piece"
+                        github="https://github.com/d4tdev/api-one-piece"
                      />
                   </div>
                   <div className="col-span-4 flex justify-center">
@@ -164,7 +164,7 @@ const projects = () => {
                         img={projectAPILetsFood}
                         link="https://letsfood.click/"
                         type="Featured Project"
-                        github="https://github.com/ttd4t/Lets-Food"
+                        github="https://github.com/d4tdev/Lets-Food"
                      />
                   </div>
 
@@ -175,7 +175,7 @@ const projects = () => {
                         summary={`The project is created from Typescript along with NodeJS to create an API for a book-selling website. The project uses the MVC and client-server model. It was carried out by two people.`}
                         link="https://ban-sach-truc-tuyen.vercel.app"
                         type="Featured Project Web"
-                        github="https://github.com/ttd4t/api-web-ban-sach"
+                        github="https://github.com/d4tdev/api-web-ban-sach"
                      />
                   </div>
 
@@ -185,7 +185,7 @@ const projects = () => {
                         img={projectConan}
                         link="https://api-conan.cyclic.app/api"
                         type="Featured Project API"
-                        github="https://github.com/ttd4t/api-conan-detective"
+                        github="https://github.com/d4tdev/api-conan-detective"
                      />
                   </div>
 
@@ -196,7 +196,8 @@ const projects = () => {
                         summary={`"This project was created to assist users in managing personal tasks. It utilizes the MVC model and a NodeJS-ReactJS client-server architecture. This project is built using NodeJS, ExpressJS, MongoDB, and ReactJS, collectively referred to as the MERN stack.`}
                         link="https://wfmg.vercel.app"
                         type="Featured Project Web"
-                        github="https://github.com/d4Jt/WFMG"
+                        github="https://github.com/d4tdev
+/WFMG"
                      />
                   </div>
                </div>

@@ -12,10 +12,11 @@ const Footer = () => {
                <span className="text-primary text-2xl px-1">&#9825;</span>{' '}
                by&nbsp;
                <Link
-                  href="https://github.com/d4Jt"
+                  href="https://github.com/d4tdev
+"
                   target={'_blank'}
                   className="underline underline-offset-2">
-                  d4Jt
+                  d4tdev
                </Link>
             </div>
             <Link

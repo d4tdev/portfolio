@@ -13,8 +13,8 @@ export default function Home() {
    return (
       <>
          <Head>
-            <title>d4Jt | Home Page</title>
-            <meta name="title" content="d4Jt | Home Page" />
+            <title>d4tdev | Home Page</title>
+            <meta name="title" content="d4tdev | Home Page" />
             <meta
                name="description"
                content="Write something about my self :)"
@@ -23,10 +23,10 @@ export default function Home() {
             {/* <!-- Open Graph | Facebook | Zalo --> */}
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://datdev.id.vn/" />
-            <meta property="og:title" content="d4Jt | Home Page" />
+            <meta property="og:title" content="d4tdev | Home Page" />
             <meta
                property="og:description"
-               content="Write something about my self :)"
+               content="Write something about my self :Đ"
             />
             <meta property="og:image" content={profilePic} />
             <script
@@ -40,15 +40,12 @@ export default function Home() {
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content="https://datdev.id.vn/" />
-            <meta property="twitter:title" content="d4Jt | Home Page" />
+            <meta property="twitter:title" content="d4tdev | Home Page" />
             <meta
                property="twitter:description"
                content="Write something about my self :)"
             />
-            <meta
-               property="twitter:image"
-               content="https://media.discordapp.net/attachments/1047885084402925642/1092568585462878318/z4015040176340_3d64de1186246b6f5b892cd5d6da21a7.jpg?width=351&height=468"
-            />
+            <meta property="twitter:image" content={profilePic} />
          </Head>
          <TransitionEffect />
          <main
@@ -62,7 +59,7 @@ export default function Home() {
                         src={profilePic}
                         priority
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-                        alt="d4Jt"
+                        alt="d4tdev"
                         className="ml-12 w-[63%] h-auto rounded-[50%] lg:hidden md:inline-block md:w-full xl:w-[77%] md:ml-0"
                      />
                   </div>
@@ -98,7 +95,7 @@ export default function Home() {
             </Layout>
             <HireMe />
             <div className="absolute right-8 bottom-24 inline-block w-24 md:hidden">
-               <Image src={lightBulb} alt="d4Jt" className="w-full h-auto" />
+               <Image src={lightBulb} alt="d4tdev" className="w-full h-auto" />
             </div>
          </main>
       </>

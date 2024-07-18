@@ -106,7 +106,8 @@ const NavBar = () => {
                   <DiscordIcon />
                </motion.a>
                <motion.a
-                  href="https://github.com/d4Jt"
+                  href="https://github.com/d4tdev
+"
                   target={'_blank'}
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
@@ -114,7 +115,8 @@ const NavBar = () => {
                   <GithubIcon />
                </motion.a>
                <motion.a
-                  href="https://www.instagram.com/d4jt._//ttd4t._/"
+                  href="https://www.instagram.com/d4tdev
+._//ttd4t._/"
                   target={'_blank'}
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
@@ -192,7 +194,8 @@ bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
                      <DiscordIcon />
                   </motion.a>
                   <motion.a
-                     href="https://github.com/d4Jt"
+                     href="https://github.com/d4tdev
+"
                      target={'_blank'}
                      whileHover={{ y: -2 }}
                      whileTap={{ scale: 0.9 }}
@@ -200,7 +203,8 @@ bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
                      <GithubIcon />
                   </motion.a>
                   <motion.a
-                     href="https://www.instagram.com/d4jt._/"
+                     href="https://www.instagram.com/d4tdev
+._/"
                      target={'_blank'}
                      whileHover={{ y: -2 }}
                      whileTap={{ scale: 0.9 }}
